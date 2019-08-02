@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lokasi"
+    tools:context=".LokasiActivity">
+
+    <LinearLayout
+        android:id="@+id/title_atas"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:onClick="rowBack"
+            android:tint="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/left_arrow"/>
+        <TextView
+            android:onClick="rowBack"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/back_to_home"/>
+    </LinearLayout>
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/keterangan"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/title_atas"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shadowColor="@android:color/darker_gray"
+        app:cornerRadius="30dp"
+        app:shadowRadius="20dp"
+        app:shadowMargin="5dp"
+        >
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#3584F7"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_mosque"/>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@android:color/white"
+                        android:text="Jumlah"/>
+
+                    <TextView
+                        android:id="@+id/jml_masjid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textFontWeight="500"
+                        android:textSize="25sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@android:color/white"
+                        android:text="Masjid"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@android:color/white"
+                        android:text="Jumlah"/>
+
+                    <TextView
+                        android:id="@+id/jml_ustadz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textFontWeight="500"
+                        android:textSize="25sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@android:color/white"
+                        android:text="Ustadz"
+                        />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    >
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_man"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+    <RelativeLayout
+        android:id="@+id/ket_atas"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/keterangan"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terdekat"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ket_atas"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:clipToPadding="false"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tempat_lokasi"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

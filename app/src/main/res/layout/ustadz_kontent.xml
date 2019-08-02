@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        tools:ignore="UselessParent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_height="120dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:paddingStart="30dp"
+                    android:layout_width="0dp"
+                    android:gravity="start|center_vertical"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    tools:ignore="NestedWeights,RtlSymmetry">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/bg_border"
+                        >
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/foto_ustadz"
+                            android:layout_gravity="center"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_man"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="start"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/nama_ustadz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="#3B4F85"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textFontWeight="500"
+                            android:textSize="14sp"
+                            />
+                        <TextView
+                            android:id="@+id/alamat_ustadz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@android:color/darker_gray"
+                            android:text="@string/jl_sekeloa_utara"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#189D0E"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="12dp"
+                        >
+                        <Button
+                            android:id="@+id/btn_wa"
+                            android:layout_gravity="center"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@android:color/white"
+                            android:background="@drawable/phone"/>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#ECECEC"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

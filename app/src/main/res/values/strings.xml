@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Islamedia</string>
+    <string name="txt_main_desc_judul">Media informasi kebutuhan umat</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="slide_1_title">Masjid Terdekat</string>
+    <string name="slide_1_desc">Dapatkan informasi masjid terdekat</string>
+
+    <string name="slide_2_title">Data Ustadz</string>
+    <string name="slide_2_desc">Cari informasi ustadz kesukaan mu</string>
+
+    <string name="slide_3_title">Informasi Masjid</string>
+    <string name="slide_3_desc">Dapat informasi masjid yang ingin kamu kunjungi </string>
+
+    <string name="slide_4_title">Info Berita</string>
+    <string name="slide_4_desc">Dapat semua berita terbaru </string>
+
+    <string name="txt_main_pagi">Selamat Pagi</string>
+    <string name="txt_main_subuh">Subuh</string>
+    <string name="txt_main_dzuhur">Dzuhur</string>
+    <string name="txt_main_ashar">Ashar</string>
+    <string name="txt_main_maghrib">Maghrib</string>
+    <string name="txt_main_isya">Isya</string>
+    <string name="txt_main_m_masjid">Terdekat</string>
+    <string name="txt_main_menu">Mulai mencari infomrasi</string>
+    <string name="txt_main_m_ustadz">Ustadz</string>
+    <string name="txt_main_m_info_masjid">Masjid</string>
+    <string name="txt_main_berita">Berita</string>
+    <string name="txt_main_jangan">Jangan lupa shalat</string>
+    <string name="cloud">Cloud</string>
+    <string name="_21_c">-</string>
+    <string name="masjid">masjid</string>
+    <string name="ustadz">ustadz</string>
+    <string name="list_masjid">list_masjid</string>
+    <string name="berita">berita</string>
+    <string name="txt_masjid_cari">Cari Masjid</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="cari_ustadz">Cari Ustadz</string>
+    <string name="baca">Baca</string>
+
+    <string name="selamat_pagi">Selamat Pagi</string>
+    <string name="selamat_siang">Selamat Siang</string>
+    <string name="selamat_sore">Selamat Sore</string>
+    <string name="selamat_malam">Selamat Malam</string>
+    <string name="jl_sekeloa_utara">Jl. Sekeloa Utara</string>
+    <string name="jl_sekeloa_utara_nomer_114">Jl Sekeloa Utara Nomer 114</string>
+    <string name="_15_km">15 KM</string>
+    <string name="_04_35">04:35</string>
+    <string name="_11_55">11:55</string>
+    <string name="_14_55">14:55</string>
+    <string name="_17_40">17:40</string>
+    <string name="_19_00">19:00</string>
+    <string name="informasi_ustadz">Informasi Ustadz</string>
+    <string name="temukan_ustadzmu">Temukan Ustadzmu</string>
+    <string name="list_ustadz">List ustadz</string>
+    <string name="next">next</string>
+    <string name="finis">finis</string>
+
+    <string name="get_started">STARTED</string>
+
+</resources>

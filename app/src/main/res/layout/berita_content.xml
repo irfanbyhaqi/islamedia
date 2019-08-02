@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/tmp_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shadowColor="#ECECEC"
+        app:cornerRadius="10dp"
+        app:shadowRadius="10dp"
+        app:shadowMargin="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@+id/foto_berita"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_berita"
+                />
+            <View
+                android:background="@android:color/background_dark"
+                android:alpha="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                />
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Islamedia"/>
+        </RelativeLayout>
+    </com.loopeer.shadow.ShadowView>
+
+    <RelativeLayout
+        android:id="@+id/tem_desc"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tmp_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/portal_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@android:color/background_dark"
+            android:text="Portal Berita"
+            />
+        <TextView
+            android:id="@+id/judul_berita"
+            android:layout_below="@+id/portal_berita"
+            android:layout_width="330dp"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@android:color/darker_gray"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+            />
+        <Button
+            android:id="@+id/baca"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/judul_berita"
+            android:layout_width="60dp"
+            android:textSize="13sp"
+            android:layout_height="30dp"
+            android:text="@string/baca"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/tem_desc"
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"/>
+
+</RelativeLayout>

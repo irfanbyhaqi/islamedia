@@ -1,0 +1,92 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:layout_marginStart="40dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_marginStart="55dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_location"
+                        android:tint="@android:color/darker_gray"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/nama_masjid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Masjid Albarkah"
+                        />
+
+                    <TextView
+                        android:id="@+id/alamat_masjid"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_masjid"
+                        android:text="Pusat Terpadu Transtudio, Jl. Gatot Subroto No.289, Cibangkong, Batununggal, Bandung City, West Java 40273" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="80dp"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/foto_masjid"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_mosque"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

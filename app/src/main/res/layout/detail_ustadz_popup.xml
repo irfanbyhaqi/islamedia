@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/det_foto_ustadz"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="5dp"
+            android:src="@drawable/ic_man"/>
+        <TextView
+            android:id="@+id/det_nama_ustadz"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/det_foto_ustadz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ustadz Abdul Shomad"/>
+        <TextView
+            android:id="@+id/status_ustadz"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_below="@+id/det_nama_ustadz"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dakwah "/>
+
+        <ImageView
+            android:id="@+id/garis"
+            android:layout_below="@+id/status_ustadz"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:background="@drawable/garis_putus_putus"/>
+
+        <TextView
+            android:id="@+id/det_alamat_ustadz"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:layout_below="@+id/garis"
+            android:drawableTint="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="13sp"
+            android:text="Jl. Sekeloa Utara, Kota Bandung"
+            android:textColor="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/garis2"
+            android:layout_below="@+id/det_alamat_ustadz"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:background="@drawable/garis_putus_putus"/>
+
+        <TextView
+            android:id="@+id/det_masjid"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_palestine"
+            android:layout_below="@+id/garis2"
+            android:drawableTint="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="13sp"
+            android:text="Masjid Al Barkah"
+            android:textColor="@android:color/darker_gray"/>
+        <ImageView
+            android:id="@+id/garis3"
+            android:layout_below="@+id/det_masjid"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:background="@drawable/garis_putus_putus"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/garis3"
+            android:id="@+id/call_pengguna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_whatsapp"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:textColor="#28A83D"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHAT"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

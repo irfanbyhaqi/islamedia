@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#3584F7</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorTextDashboard">#5e5e5e</color>
+    <color name="colorBgView">#FF5454</color>
+
+    <color name="bg_splashscreen">#3584F7</color>
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+    <color name="slide_1">#ffffff</color>
+    <color name="slide_2">#134C99</color>
+    <color name="slide_3">#ffffff</color>
+    <color name="slide_4">#7CE5E0</color>
+
+    <color name="tab_indication_gray">#c0c0c0</color>
+    <color name="intor_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#c0c0c0</color>
+    <color name="dot_light_screen2">#c0c0c0</color>
+    <color name="dot_light_screen3">#c0c0c0</color>
+    <color name="dot_light_screen4">#c0c0c0</color>
+
+    <array name="array_dot_active">
+        <item>@color/bg_splashscreen</item>
+        <item>@color/bg_splashscreen</item>
+        <item>@color/bg_splashscreen</item>
+        <item>@color/bg_splashscreen</item>
+        <item>@color/bg_splashscreen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+    </array>
+</resources>
